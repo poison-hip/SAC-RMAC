@@ -1,0 +1,16 @@
+name: mastering-rl
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  # Keep Python aligned with the project README
+  - python=3.12
+  - pip
+  # Needed because requirements include a git+https dependency (gymnasium-robotics from source)
+  - git
+  # Used by moviepy/video recording; avoids relying on system ffmpeg
+  - ffmpeg
+  - pip:
+      # Install the fully pinned, reproducible dependency set
+      - -r requirements.txt
+

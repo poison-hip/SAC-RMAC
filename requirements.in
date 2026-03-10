@@ -1,0 +1,6 @@
+gymnasium
+gymnasium[other]  # for recording videos
+git+https://github.com/Farama-Foundation/gymnasium-robotics.git # build from source because of issue with fetch
+stable-baselines3
+pyyaml
+tensorboard
